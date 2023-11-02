@@ -25,7 +25,10 @@ public class Item {
     @OneToMany
     private List<Reviews> reviews;
     private String restaurant;
-    private Blob image;
+    @OneToOne
+    private Image coverPic;
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Image> image;
     private int orderQuantity;
     private String quantity;
 

@@ -1,0 +1,42 @@
+---
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jackson:
+    serialization:
+      fail-on-empty-beans: 'false'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  # Mail properties
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nzuri.mail@gmail.com
+    password: eoxtccoedsscariq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+#server port
+server:
+  port: '8080'
+
+#password encoder
+password-encoder : true
+
+
+twilio:
+  accountSid: 'ACf2ec8758307c1b02d15a09db21e41651'
+  authToken: 'eaa0c4fa745dcc794ffb9a986185bcfb'
+  verifyServiceSid: 'VAfe3b72e87e4a96fdfda2b2aabbbd08a0'

@@ -5,7 +5,8 @@ start=$(date +"%s")
 ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
 docker pull aplexy/cwift-server-001
 
-CONTAINER_NAME=bmiapp
+CONTAINER_NAME=cwift-server-001-cont1
+
 if [ "$(docker ps -qa -f name=$CONTAINER_NAME)" ]; then
     if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then
         echo "Container is running -> stopping it..."

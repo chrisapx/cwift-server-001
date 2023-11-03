@@ -21,8 +21,8 @@ public class SwaggerConfiguration {
                 .apiInfo(apiDetails());
     }
 
-    private ApiInfo apiDetails() {
-        return new ApiInfo("Swagger", "Configuring Swagger in the mc_user service application","1.0.0", "Pay me later",
+    private ApiInfo apiDetails(){
+        return new ApiInfo("Swagger", "Configuring Swagger in the cwift backend server application","1.0.0", "Pay me later",
                 "Christopher Mwesigwa", "cwift.com", "cwift.mail@gmail.com");
     }
 }

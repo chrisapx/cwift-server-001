@@ -1,4 +1,4 @@
-name: BMI application workflow
+name: Cwift Server 001 application workflow
 on:
   pull_request:
     branches: [ master ]

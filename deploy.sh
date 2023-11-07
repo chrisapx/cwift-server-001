@@ -2,7 +2,7 @@
 
 start=$(date +"%s")
 
-ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
+ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_IP} -i key.txt -t -t -o StrictHostKeyChecking=no << 'ENDSSH'
 docker pull aplexy/cwift-server-001
 
 CONTAINER_NAME=cwift-server-001-cont1

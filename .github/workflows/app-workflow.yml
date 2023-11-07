@@ -6,7 +6,7 @@ on:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'
   push:
-    branches: [ master ]
+    branches: [ deploy ]
     paths:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'

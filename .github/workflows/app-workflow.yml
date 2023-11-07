@@ -1,15 +1,21 @@
 name: Cwift Server 001 application workflow
 on:
-  pull_request:
-    branches: [ master ]
-    paths:
-      - 'src/**'
-      - '.github/workflows/app-workflow.yaml'
   push:
     branches: [ deploy ]
     paths:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'
+
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'src/**'
+      - '.github/workflows/app-workflow.yaml'
+#  push:
+#    branches: [ deploy ]
+#    paths:
+#      - 'src/**'
+#      - '.github/workflows/app-workflow.yaml'
 
 jobs:
   project-build:

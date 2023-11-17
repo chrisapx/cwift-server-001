@@ -6,6 +6,7 @@ on:
       - 'src/**'
       - '.github/workflows/app-workflow.yaml'
 
+
   pull_request:
     branches: [ master ]
     paths:
